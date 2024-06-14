@@ -30,7 +30,7 @@ def submit_text_retrieve(input_folder, inputfile_session_number, output_folder):
                 output_file.write(response.text)
             print(f"{session_number} : Result is retrieved.")
         else:
-            print(f"{session_number} : Error retrieving results - {response.status_line}")
+            print(f"{session_number} : Error retrieving results - {response.status_code}")
 
 if __name__ == "__main__":
     if len(sys.argv) < 4:
