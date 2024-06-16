@@ -6,7 +6,7 @@ This repository is to collect various tools and demonstrate how to use those too
 # [PubTator3](https://www.ncbi.nlm.nih.gov/research/pubtator3/api)
 PubTator3 uses a high-performance entities search engine, to normalize different forms of the same entity into a unique standardized name to returned all matching articles. It is developed and maintained by NIH.
 
-# Example: OECD in vitro testing guidelines
+# Example 1: OECD in vitro testing guidelines
 Here I use PubTator3 API to demonstrate how to extract entities from raw texts of OECD in vitro test guidelines, which are a set of internationally recognized protocols and standards designed to evaluate the safety and efficacy of chemicals, pharmaceuticals, and other substances using non-animal testing methods. I want to identify what cell lines and genes are used in each testing guideline.
 
 ## Data preparation
@@ -33,3 +33,12 @@ python SubmitText_retrieve.py ../OECD/Pubtator_Input SessionNumberFile.txt ../OE
 
 ## Summarization
 Check the [summary notebook](./OECD/summarize.ipynb) for more details. After analysis, OECD in vitro testing guidelines contain 22 guidelines and cover 11 gene targets, with the use of 6 human cell lines.
+
+# Example 2: Aging-related genes
+Fundemental researchers often build phenotype-/disease-associated gene list for the prescreening step. Here I demonstrate how to build an aging-related gene list by using PubTator3 API. I first extract relation (associate) between disease (Aging_premature) and genes from pubmed literatures. After a preliminary filtering step, the list is ready for further usage.
+
+## Relation extraction by PubTator3 API
+The process consists two steps, the first is to get a disease ontology list related to aging. The second step is to use this aging-related disease id to get the genes. Please check [aging-associated gene identification notebook](./Aging/aging_genes.ipynb) for more detals.
+
+## Summarization
+Check the [aging-associated gene identification notebook](./Aging/aging_genes.ipynb) for more details. The disease ontology @DISEASE_AGING_PREMATURE have 391 associated genes.  
