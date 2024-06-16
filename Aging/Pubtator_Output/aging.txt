@@ -1,0 +1,6 @@
+_id,biotype,name,match
+@DISEASE_Aging_Premature,disease,Aging Premature,Matched on name <m>Aging Premature</m>
+@DISEASE_Hippocampal_Sclerosis,disease,Hippocampal Sclerosis,Matched on synonyms <m>Aging Hippocampal Sclerosis</m>
+@DISEASE_Werner_Syndrome,disease,Werner Syndrome,Multiple matches
+@DISEASE_Branchio_Oto_Renal_Syndrome,disease,Branchio-Oto-Renal Syndrome,Multiple matches
+@DISEASE_Penttinen_Aula_syndrome,disease,Penttinen-Aula syndrome,Multiple matches
