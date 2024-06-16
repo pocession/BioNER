@@ -30,3 +30,6 @@ python SubmitText_request.py ../OECD/Pubtator_Input All SessionNumberFile.txt
 cd ./PubTator3/
 python SubmitText_retrieve.py ../OECD/Pubtator_Input SessionNumberFile.txt ../OECD/Pubtator_Output/
 ```
+
+## Summarization
+Check the [summary notebook](./OECD/summarize.ipynb) for more details. After analysis, OECD in vitro testing guidelines contain 22 guidelines and cover 11 gene targets, with the use of 6 human cell lines.
